@@ -32,6 +32,7 @@
 		31DE1F0726930BC600423DDC /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DE1F0626930BC600423DDC /* StorageManager.swift */; };
 		31DE1F0926930BED00423DDC /* AnalyticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DE1F0826930BED00423DDC /* AnalyticsManager.swift */; };
 		31DE1F0B26930C1100423DDC /* HaticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DE1F0A26930C1100423DDC /* HaticsManager.swift */; };
+		31DE1F0D2693143800423DDC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 31DE1F0C2693143800423DDC /* GoogleService-Info.plist */; };
 		A6488AF49CF0064589333C38 /* Pods_InstaGo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D50D0076EDF6D27BC06CA785 /* Pods_InstaGo.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,7 @@
 		31DE1F0626930BC600423DDC /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		31DE1F0826930BED00423DDC /* AnalyticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsManager.swift; sourceTree = "<group>"; };
 		31DE1F0A26930C1100423DDC /* HaticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaticsManager.swift; sourceTree = "<group>"; };
+		31DE1F0C2693143800423DDC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ABBD2D6552046EAA24DAC177 /* Pods-InstaGo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaGo.debug.xcconfig"; path = "Target Support Files/Pods-InstaGo/Pods-InstaGo.debug.xcconfig"; sourceTree = "<group>"; };
 		D50D0076EDF6D27BC06CA785 /* Pods_InstaGo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaGo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D872F3E543CE57D1B88D71AD /* Pods-InstaGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaGo.release.xcconfig"; path = "Target Support Files/Pods-InstaGo/Pods-InstaGo.release.xcconfig"; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 				31DE1EC82692BC6C00423DDC /* AppDelegate.swift */,
 				31DE1ECA2692BC6C00423DDC /* SceneDelegate.swift */,
 				31DE1ED12692BC6D00423DDC /* Assets.xcassets */,
+				31DE1F0C2693143800423DDC /* GoogleService-Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 			files = (
 				31DE1ED52692BC6D00423DDC /* LaunchScreen.storyboard in Resources */,
 				31DE1ED22692BC6D00423DDC /* Assets.xcassets in Resources */,
+				31DE1F0D2693143800423DDC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
