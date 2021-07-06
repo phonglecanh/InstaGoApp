@@ -198,11 +198,11 @@
 			isa = PBXGroup;
 			children = (
 				31DE1EEE26930A2E00423DDC /* SignInViewController.swift */,
+				31DE1EF026930A6E00423DDC /* SignUpViewController.swift */,
 				31DE1EF426930AA600423DDC /* ListViewController.swift */,
 				31DE1EF626930ABB00423DDC /* PostViewController.swift */,
 				31DE1EF826930ADE00423DDC /* SettingsViewController.swift */,
 				31DE1EF226930A8E00423DDC /* CaptionViewController.swift */,
-				31DE1EF026930A6E00423DDC /* SignUpViewController.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
