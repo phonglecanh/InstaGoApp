@@ -74,6 +74,8 @@ class SignUpViewController: UIViewController, UITextFieldDelegate, UIImagePicker
         return button
     }()
     
+    public var completion: (() -> Void)?
+        
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -170,7 +172,26 @@ class SignUpViewController: UIViewController, UITextFieldDelegate, UIImagePicker
             presentError()
             return
         }
-        // Sign in with authManager
+        
+        let data = profilePictureImageView.image?.pngData()
+        // Sign up with authManager
+        AuthManager.shared.signUp(email: email,
+                                  username: username,
+                                  password: password,
+                                  profilePicture: data) { [weak self] result in
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let user):
+                    UserDefaults.standard.setValue(user.email, forKey: "email")
+                    UserDefaults.standard.setValue(user.username, forKey: "username")
+                    self?.navigationController?.popToRootViewController(animated: true)
+                    self?.completion?()
+                case .failure(let error):
+                    print("\n\nSign Up Error: \(error)")
+                }
+            }
+        }
+        
     }
     
     private func presentError() {

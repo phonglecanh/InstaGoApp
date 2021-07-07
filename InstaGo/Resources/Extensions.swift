@@ -32,5 +32,16 @@ extension UIView {
     var height: CGFloat {
         frame.size.height
     }
-    
+}
+
+extension Encodable {
+    func asDictionary() -> [String: Any]? {
+        guard let data = try? JSONEncoder().encode(self) else {
+            return nil
+        }
+        let json = try? JSONSerialization.jsonObject(with: data,
+                                                options: .allowFragments)
+                                                as? [String:Any]
+        return json
+    }
 }

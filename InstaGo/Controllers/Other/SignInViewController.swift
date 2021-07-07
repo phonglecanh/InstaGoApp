@@ -75,6 +75,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         passwordField.delegate = self
         
         addButtonActions()
+    
     }
     
     override func viewDidLayoutSubviews() {
@@ -124,7 +125,13 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
     
     @objc func didTapCreateAccount() {
         let vc = SignUpViewController()
-        
+        vc.completion = { [weak self] in
+            DispatchQueue.main.async {
+                let tabVC = TabBarViewController()
+                tabVC.modalPresentationStyle = .fullScreen
+                self?.present(tabVC, animated: true)
+            }
+        }
         navigationController?.pushViewController(vc, animated: true)
     }
     
