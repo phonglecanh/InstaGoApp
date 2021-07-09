@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		319D4D8E2698294B006BA825 /* PosterCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319D4D8D2698294B006BA825 /* PosterCollectionViewCellViewModel.swift */; };
+		319D4D9026982A2F006BA825 /* PostCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319D4D8F26982A2F006BA825 /* PostCollectionViewCellViewModel.swift */; };
+		319D4D9226982AE5006BA825 /* PostActionsCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319D4D9126982AE5006BA825 /* PostActionsCollectionViewCellViewModel.swift */; };
+		319D4D9426982B5A006BA825 /* PostLikesCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319D4D9326982B5A006BA825 /* PostLikesCollectionViewCellViewModel.swift */; };
+		319D4D9626982C26006BA825 /* PostCaptionCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319D4D9526982C26006BA825 /* PostCaptionCollectionViewCellViewModel.swift */; };
+		319D4D9826982CC3006BA825 /* PostDatetimeCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319D4D9726982CC3006BA825 /* PostDatetimeCollectionViewCellViewModel.swift */; };
+		319D4D9A26982EB0006BA825 /* HomeFeedCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319D4D9926982EB0006BA825 /* HomeFeedCellType.swift */; };
 		31C76A5F2693EA660014F7A8 /* SignInHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C76A5E2693EA660014F7A8 /* SignInHeaderView.swift */; };
 		31C76A612693EEBA0014F7A8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C76A602693EEBA0014F7A8 /* Extensions.swift */; };
 		31C76A632693FA330014F7A8 /* IGTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C76A622693FA330014F7A8 /* IGTextField.swift */; };
@@ -40,6 +47,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		319D4D8D2698294B006BA825 /* PosterCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
+		319D4D8F26982A2F006BA825 /* PostCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
+		319D4D9126982AE5006BA825 /* PostActionsCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostActionsCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
+		319D4D9326982B5A006BA825 /* PostLikesCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLikesCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
+		319D4D9526982C26006BA825 /* PostCaptionCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCaptionCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
+		319D4D9726982CC3006BA825 /* PostDatetimeCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDatetimeCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
+		319D4D9926982EB0006BA825 /* HomeFeedCellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeedCellType.swift; sourceTree = "<group>"; };
 		31C76A5E2693EA660014F7A8 /* SignInHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInHeaderView.swift; sourceTree = "<group>"; };
 		31C76A602693EEBA0014F7A8 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		31C76A622693FA330014F7A8 /* IGTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGTextField.swift; sourceTree = "<group>"; };
@@ -146,6 +160,7 @@
 				31DE1EFC26930B2600423DDC /* Post.swift */,
 				31DE1EFE26930B3A00423DDC /* Relationship.swift */,
 				31DE1F0026930B5500423DDC /* Notification.swift */,
+				319D4D9926982EB0006BA825 /* HomeFeedCellType.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -153,6 +168,12 @@
 		31DE1EDF2693029900423DDC /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				319D4D8D2698294B006BA825 /* PosterCollectionViewCellViewModel.swift */,
+				319D4D8F26982A2F006BA825 /* PostCollectionViewCellViewModel.swift */,
+				319D4D9326982B5A006BA825 /* PostLikesCollectionViewCellViewModel.swift */,
+				319D4D9526982C26006BA825 /* PostCaptionCollectionViewCellViewModel.swift */,
+				319D4D9126982AE5006BA825 /* PostActionsCollectionViewCellViewModel.swift */,
+				319D4D9726982CC3006BA825 /* PostDatetimeCollectionViewCellViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -349,17 +370,24 @@
 				31DE1F0926930BED00423DDC /* AnalyticsManager.swift in Sources */,
 				31DE1ECD2692BC6C00423DDC /* HomeViewController.swift in Sources */,
 				31DE1F0B26930C1100423DDC /* HaticsManager.swift in Sources */,
+				319D4D8E2698294B006BA825 /* PosterCollectionViewCellViewModel.swift in Sources */,
 				31DE1EF126930A6E00423DDC /* SignUpViewController.swift in Sources */,
 				31DE1EFB26930B0E00423DDC /* User.swift in Sources */,
+				319D4D9826982CC3006BA825 /* PostDatetimeCollectionViewCellViewModel.swift in Sources */,
 				31C76A5F2693EA660014F7A8 /* SignInHeaderView.swift in Sources */,
 				31DE1EE72693092600423DDC /* NotificationsViewController.swift in Sources */,
 				31C76A632693FA330014F7A8 /* IGTextField.swift in Sources */,
+				319D4D9026982A2F006BA825 /* PostCollectionViewCellViewModel.swift in Sources */,
+				319D4D9A26982EB0006BA825 /* HomeFeedCellType.swift in Sources */,
+				319D4D9426982B5A006BA825 /* PostLikesCollectionViewCellViewModel.swift in Sources */,
 				31DE1EF926930ADE00423DDC /* SettingsViewController.swift in Sources */,
 				31DE1F0526930BA400423DDC /* DatabaseManager.swift in Sources */,
 				31DE1EFF26930B3A00423DDC /* Relationship.swift in Sources */,
+				319D4D9626982C26006BA825 /* PostCaptionCollectionViewCellViewModel.swift in Sources */,
 				31DE1EFD26930B2600423DDC /* Post.swift in Sources */,
 				31DE1F0326930B7D00423DDC /* AuthManager.swift in Sources */,
 				31C76A612693EEBA0014F7A8 /* Extensions.swift in Sources */,
+				319D4D9226982AE5006BA825 /* PostActionsCollectionViewCellViewModel.swift in Sources */,
 				31DE1EEF26930A2E00423DDC /* SignInViewController.swift in Sources */,
 				31DE1EE92693093D00423DDC /* ProfileViewController.swift in Sources */,
 				31DE1EC92692BC6C00423DDC /* AppDelegate.swift in Sources */,
