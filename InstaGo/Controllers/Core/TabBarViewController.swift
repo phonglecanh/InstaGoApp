@@ -26,7 +26,7 @@ class TabBarViewController: UITabBarController {
         let profile = ProfileViewController(user: currentUser)
         
         let nav1 = UINavigationController(rootViewController: home)
-        let nav2 = UINavigationController(rootViewController: home)
+        let nav2 = UINavigationController(rootViewController: explore)
         let nav3 = UINavigationController(rootViewController: camera)
         let nav4 = UINavigationController(rootViewController: activity)
         let nav5 = UINavigationController(rootViewController: profile)
