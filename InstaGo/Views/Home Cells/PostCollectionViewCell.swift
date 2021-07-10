@@ -10,7 +10,7 @@ import SDWebImage
 
 class PostCollectionViewCell: UICollectionViewCell {
     static let identifier = "PostCollectionViewCell"
-    
+
     private let imageView: UIImageView = {
         let image = UIImageView()
         image.contentMode = .scaleAspectFill
